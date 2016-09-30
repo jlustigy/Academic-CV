@@ -1,0 +1,126 @@
+% LaTeX resume using res.cls
+\documentclass[margin,10pt]{res}
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font 
+
+\setlength{\textwidth}{6in} % set width of text portion
+\newcommand{\code}[1]{\texttt{#1}}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,       % false: boxed links; true: colored links
+    linkcolor=red,          % color of internal links (change box color with linkbordercolor)
+    citecolor=green,        % color of links to bibliography
+    filecolor=magenta,      % color of file links
+    urlcolor=blue           % color of external links
+}
+
+\usepackage{enumitem}
+\setlist[itemize,1]{leftmargin=\dimexpr 26pt-3mm}
+
+\begin{document}
+
+%% Center the name over the entire width of resume:
+\moveleft.5\hoffset\centerline{\textsc{\Large Jacob Lustig-Yaeger}}
+\moveleft.5\hoffset\centerline{Curriculum Vitae}
+%
+%% Draw a horizontal line the whole width of resume:
+\moveleft\hoffset\vbox{\hrule width 0.93\resumewidth height 1pt}
+\vspace{-12pt}
+\hspace{-1in}
+\begin{minipage}[t]{0.93\resumewidth}
+Email: \href{mailto:jlustigy@uw.edu}{jlustigy@uw.edu} \hfill GitHub: \href{https://github.com/jlustigy}{jlustigy}\\
+Web: \url{http://depts.washington.edu/astron/profile/lustig-yaeger-jacob/}
+\end{minipage}
+
+
+%% Select character to use as the bullet marker. 
+%% Comment out to get normal dark filled circle bullets
+\def\labelitemi{---}	
+
+\begin{resume}
+
+\section{Office \\Address}
+Department of Astronomy, University of Washington \\
+Physics-Astronomy Bldg, B319 \\
+Box 351580 \\
+Seattle, WA 98195-1580 \\
+
+\section{Education} 
+University of Washington, Seattle, WA \hfill 2014 -- present\\
+Graduate student in Astronomy and Astrobiology (dual-title PhD program)  
+
+University of Washington, Seattle, WA \hfill 2014 -- 2016\\
+M. Sci. in Astronomy
+
+University of California, Santa Cruz, CA  \hfill 2009 -- 2013\\
+B.S.\ with Honors in Physics \\
+Minor in Mathematics\\
+
+\section{Research \\Experience} 
+                {\sl Graduate Research Assistant}: Virtual Planetary Laboratory   \hfill          Sept 2014 --\\
+                Extrasolar planets, their atmospheres, \& habitability with Dr. Victoria Meadows
+                    \begin{itemize}  \itemsep -1pt %reduce space between items
+                        \item Lead developer of a novel retrieval model for the analysis of terrestrial exoplanet spectra 
+                        \item Experience simulating and analyzing radiative transfer, photochemical, climate, and telescope noise models
+                        \item Programming in Python, Julia, IDL, \& Fortran
+                    \end{itemize}  
+
+                {\sl Junior Specialist}: University of California, Santa Cruz \hfill          Dec 2013 -- Aug 2014\\
+                Hot Jupiter atmospheres with Jonathan Fortney and Michael Line
+                    \begin{itemize}  \itemsep -1pt %reduce space between items
+                        \item Wrote Python code to analyze the emission spectra of exoplanets observed during secondary eclipse
+                        \item Gained experience using Bayesian methods of parameter estimation
+                    \end{itemize}  
+                    
+                {\sl Undergraduate Researcher}: University of California, Santa Cruz \hfill          June 2012 -- Dec 2013\\
+                Extrasolar planet and brown dwarf atmospheric opacity sources with Jonathan Fortney
+                    \begin{itemize}  \itemsep -1pt %reduce space between items
+                        \item Wrote IDL code to calculate, tabulate, and plot weighted mean opacities over a wide range of atmospheric temperatures, pressures, and metallicities\\
+                    \end{itemize}
+   
+\section{Teaching \\Experience} 
+                {\sl Teaching Assistant}: Department of Astronomy, University of Washington   \hfill          Sept 2014 -- June 2015\\
+                Led two biweekly sections for undergraduate students
+                    \begin{itemize}  \itemsep -1pt %reduce space between items
+                        \item ASTR 101 (Spring 2015; Autumn 2014)
+                        \item ASTR 150 (Winter 2015)
+                    \end{itemize}  
+                
+                {\sl Math \& Writing Tutor}: Learning Support Services, UCSC   \hfill          Sept 2010 -- June 2012\\
+                Instructed students in college level mathematics and writing as a group and drop-in tutor\\
+
+                 
+                                  
+\section{Honors \\ \& Awards}
+                 \begin{itemize}  \itemsep -1pt %reduce space between items
+                    %\item Astrobiology Fellow at University of Washington Astrobiology Program (2014)
+                    \item Honors undergraduate thesis in physics (2013)
+                    \item University Honor, \textit{cum laude} at University of California, Santa Cruz (2013)\\
+                 \end{itemize}  
+
+\section{Publications} 
+                \begin{itemize}  
+                    \item Luger, R., \textbf{Lustig-Yaeger, J.}, Fleming, D. P., Tilley, M. A., Agol, E, Meadows, V. S., Deitrick, R., \& Barnes, R. (2016). ``\href{http://adsabs.harvard.edu/abs/2016arXiv160909075L}{The Pale Green Dot: A Method to Characterize Proxima Centauri b using Exo-Aurorae}''. \textit{arXiv preprint arXiv:1609.09075.}
+                    \item Meadows, V. S., Arney, G. N., Schwieterman, E. W., \textbf{Lustig-Yaeger, J.}, Lincowski, A. P., Robinson, T.,  Domagal-Goldman, S. D., Barnes, R. K., Fleming, D. P., Deitrick, R., Luger, R., Driscoll, P. E., Quinn, T. R., Crisp, D. (2016). ``\href{http://adsabs.harvard.edu/cgi-bin/bib_query?arXiv:1608.08620}{The Habitability of Proxima Centauri b II: Environmental States and Observational Discriminants}''. \textit{arXiv preprint arXiv:1608.08620.}
+                    \item Barnes, R., Deitrick, R., Luger, R., Driscoll, P. E., Quinn, T. R., Fleming, D. P., Arney, G., Crisp, D., Domagal-Goldman, S. D., Lincowski, A. P., \textbf{Lustig-Yaeger, J.}, \& Schwieterman, E. (2016). ``\href{http://adsabs.harvard.edu/cgi-bin/bib_query?arXiv:1608.06919}{The Habitability of Proxima Centauri b I: Evolutionary Scenarios}''. \textit{arXiv preprint arXiv:1608.06919.}
+                    \item Greene, T. P., Line, M. R., Montero, C., Fortney, J. J., \textbf{Lustig-Yaeger, J.}, \& Luther, K. (2016). ``\href{http://adsabs.harvard.edu/abs/2016ApJ...817...17G}{Characterizing transiting exoplanet atmospheres with JWST}''. \textit{The Astrophysical Journal}, 817(1), 17.
+                    \item Freedman, R. S., \textbf{Lustig-Yaeger, J.}, Fortney, J. J., Lupu, R. E., Marley, M. S., \& Lodders, K. (2014). ``\href{http://adsabs.harvard.edu/abs/2014ApJS..214...25F}{Gaseous Mean Opacities for Giant Planet and Ultracool Dwarf Atmospheres over a Range of Metallicities and Temperatures}''. \textit{The Astrophysical Journal Supplement Series}, 214(2), 25.\\
+                 \end{itemize}
+                 
+\section{Presentations} 
+                \begin{itemize}  
+                    \item \textit{Poster}: \textbf{Lustig-Yaeger, J.}, Meadows, V., Schwieterman, E. W., \& Robinson, T. (2016). Exoplanets I
+                    \item \textit{Poster}: \textbf{Lustig-Yaeger, J.}, Meadows, V., Line, M., \& Crisp, D.\ (2015). AAS/Division for Planetary Sciences Meeting Abstracts, 47, \href{http://adsabs.harvard.edu/abs/2015DPS....4741610L}{\#416.10}
+                    \item \textit{Poster}: \textbf{Lustig-Yaeger, J.}, Line, M., Fortney, J.~J., \& Meadows, V.\ (2015). Astrobiology Science Conference, \href{http://www.hou.usra.edu/meetings/abscicon2015/pdf/7558.pdf}{\#7558}
+                    \item \textit{Talk}: \textbf{Lustig-Yaeger, J.}., Line, M.~R., \& Fortney, J.~J.\ (2015). American Astronomical Society Meeting Abstracts, 225, \href{http://adsabs.harvard.edu/abs/2015AAS...22512403L}{\#124.03}
+                    \item \textit{Poster}: \textbf{Lustig-Yaeger, J.},  Line, M.~R., \& Fortney, J.~J.\ (2014). Cool Stars, 18, \href{http://www2.lowell.edu/workshops/coolstars18/abstracts-posters/poster-abstract-267.html}{\#267}
+                    \item \textit{Poster}: \textbf{Lustig-Yaeger, J.}, Fortney, J.~J., Freedman, R., Marley, M.~S., \& Lupu, R.~E.\ 2014, American Astronomical Society Meeting Abstracts \#223, 223, \href{http://adsabs.harvard.edu/abs/2014AAS...22334704L}{\#347.04}\\
+                 \end{itemize}
+                 
+ \section{Public Talks}
+                \begin{itemize}  
+                    \item ``BREAKING: Terrestrial Exoplanet Discovered in the Habitable Zone of Proxima Centauri'' Astronomy on Tap, Peddler Brewing Company, Seattle, WA. August 24, 2016.
+                 \end{itemize}
+
+\end{resume}
+\end{document}
