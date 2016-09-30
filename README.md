@@ -1,2 +1,3 @@
-# Academic-CV
-Curriculum Vitae
+# Academic Curriculum Vitae
+
+Jacob Lustig-Yaeger
